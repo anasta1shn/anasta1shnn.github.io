@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Furniture</title>
+    <link rel="stylesheet" href="style.css"> <!-- Подключение внешнего файла стилей -->
+</head>
+<body>
+    <header> <!--Шапка сайта-->
+        <div class="logo">
+            <a href="/">
+                <img src="./logo.png" alt="Логотип" width="30%" height="30%"/>
+            </a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#glavnai">Главная</a></li>
+                <li><a href="#catalog">О нас</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main> 
+        <section class="glavnai">
+            <img src="glavnai.jpeg"/>
+            <h2 id="glavnai"><span>Современная мягкая мебель<br></span><a href="#catalog"><button>В каталог</button></a></h2>
+        </section>
+
+        <section class="catalog"> <!--Каталог сайта-->
+            <h2 id="catalog">Каталог</h2>
+                <div class="div1">
+                    <img src="divan.webp" height="250px" width="250px"/>
+                    <h5><a href="divan.html">Диваны</a></h5>
+                </div>
+
+                <div class="div2">
+                    <img src="kreslo.webp" height="250px" width="250px"/>
+                    <h5><a href="kresla.html">Кресла</a></h5>
+                </div>
+
+                <div class="div3">
+                    <img src="krovat.jpg" height="250px" width="250px"/>
+                    <h5><a href="krovat.html">Кровати</a></h5>
+                </div>
+
+                <div class="div4">
+                    <img src="puf.webp" height="250px" width="250px"/>
+                    <h5><a href="puf.html">Пуфы</a></h5>
+                </div>
+
+                <div class="div5">
+                    <img src="podushka.jpg" height="250px" width="250px"/>
+                    <h5><a href="podushka.html">Аксессуары</a></h5>
+                </div>
+        </section>
+
+        <section class="contact"> <!--Форма обратной связи-->
+            <h2 id="contact">Остались вопросы?</h2>
+            <form id="feedbackForm" >
+                <fieldset class="account-info">
+                    <label><input type="name" name="name" id="name"  placeholder="Введите ваше имя" required autocomplete="off"></label>
+                    <label><input type="email" name="email" id="email" placeholder="Введите ваш e-mail" required autocomplete="off"></label>
+                    <label><textarea type="comment" name="comment" id="comment" placeholder="Ваш комментарий" required autocomplete="off"></textarea></label>
+                </fieldset>
+                <fieldset class="account-action">
+                  <input class="btn" type="submit" name="submit" value="Отправить">
+                </fieldset>
+            </form>
+
+        </section>
+    </main>
+
+    <footer class="footer"> <!--Подвал сайта-->
+        <p>&copy;Modern Furniture, 2024. Все права защищены.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
